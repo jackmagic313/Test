@@ -1,0 +1,26 @@
+{
+	"name": "ahwffManualMSI",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"url": "https://management.usgovcloudapi.net/subscriptions/65490100-336e-4e01-8026-bb88807690fb/resourcegroups/arthurwtest/providers/Microsoft.DataFactory/factories/ahwfairfax1012/pipelines/ahwffPipelineWeb?api-version=2018-06-01",
+					"method": "GET",
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.usgovcloudapi.net/subscriptions/65490100-336e-4e01-8026-bb88807690fb/resourcegroups/arthurwtest/providers/Microsoft.DataFactory/factories/ahwfairfax1012"
+					}
+				}
+			}
+		]
+	}
+}
