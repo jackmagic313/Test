@@ -1,1 +1,234 @@
-{}
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ahwfairfax1012"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"HdiByoc_password": {
+			"value": ""
+		},
+		"HdiByocLS_password": {
+			"value": ""
+		},
+		"HdiOnDemand_clusterPassword": {
+			"value": ""
+		},
+		"HdiOnDemand_clusterSshPassword": {
+			"value": ""
+		},
+		"HdiOnDemand_servicePrincipalKey": {
+			"value": ""
+		},
+		"HdiOnDemandInPublic_clusterPassword": {
+			"value": ""
+		},
+		"HdiOnDemandInPublic_clusterSshPassword": {
+			"value": ""
+		},
+		"HdiOnDemandInPublic_servicePrincipalKey": {
+			"value": ""
+		},
+		"HdiOnDemandPub_clusterPassword": {
+			"value": ""
+		},
+		"HdiOnDemandPub_clusterSshPassword": {
+			"value": ""
+		},
+		"HdiOnDemandPub_servicePrincipalKey": {
+			"value": ""
+		},
+		"ahwffBatchLinkedService_accessKey": {
+			"value": ""
+		},
+		"ahwffBatchStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffSqlLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffStorageLinkedServiceWithManagedIR_connectionString": {
+			"value": ""
+		},
+		"ahwffpubBatchLinkedService_accessKey": {
+			"value": ""
+		},
+		"ahwffpubBatchStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffpubSqlLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffpubStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"ahwffpubStorageLinkedServiceWithManagedIR_connectionString": {
+			"value": ""
+		},
+		"linkedService1_password": {
+			"value": ""
+		},
+		"DestinationDataset_7kl_properties_typeProperties_fileName": {
+			"value": "copywizout.csv"
+		},
+		"DestinationDataset_7kl_properties_typeProperties_folderPath": {
+			"value": "bashout"
+		},
+		"DestinationDataset_w0y_properties_typeProperties_fileName": {
+			"value": "copywizstagedout.csv"
+		},
+		"DestinationDataset_w0y_properties_typeProperties_folderPath": {
+			"value": "bashout"
+		},
+		"SourceDataset_7kl_properties_typeProperties_fileName": {
+			"value": "entitylogs.csv"
+		},
+		"SourceDataset_7kl_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"SourceDataset_w0y_properties_typeProperties_fileName": {
+			"value": "entitylogs.csv"
+		},
+		"SourceDataset_w0y_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"ahwffBlobDatasetIn_properties_typeProperties_fileName": {
+			"value": "entitylogs.csv"
+		},
+		"ahwffBlobDatasetIn_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"ahwffBlobDatasetInFolderOnly_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"ahwffBlobDatasetInParameterized_properties_typeProperties_fileName": {
+			"value": "@dataset().fileName"
+		},
+		"ahwffBlobDatasetInParameterized_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffBlobDatasetJson_properties_typeProperties_fileName": {
+			"value": "@dataset().fileName"
+		},
+		"ahwffBlobDatasetJson_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffBlobDatasetOut_properties_typeProperties_fileName": {
+			"value": "@concat('ahwff_', dataset().fileName)"
+		},
+		"ahwffBlobDatasetOut_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_fileName": {
+			"value": "@concat('ahwff_', dataset().fileName)"
+		},
+		"ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffpubBlobDatasetIn_properties_typeProperties_fileName": {
+			"value": "entitylogs.csv"
+		},
+		"ahwffpubBlobDatasetIn_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"ahwffpubBlobDatasetInFolderOnly_properties_typeProperties_folderPath": {
+			"value": "bashin"
+		},
+		"ahwffpubBlobDatasetInParameterized_properties_typeProperties_fileName": {
+			"value": "@dataset().fileName"
+		},
+		"ahwffpubBlobDatasetInParameterized_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffpubBlobDatasetJson_properties_typeProperties_fileName": {
+			"value": "@dataset().fileName"
+		},
+		"ahwffpubBlobDatasetJson_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffpubBlobDatasetOut_properties_typeProperties_fileName": {
+			"value": "@concat('ahwffpub_', dataset().fileName)"
+		},
+		"ahwffpubBlobDatasetOut_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_fileName": {
+			"value": "@concat('ahwffpub_', dataset().fileName)"
+		},
+		"ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath": {
+			"value": "@dataset().folderPath"
+		},
+		"HdiByoc_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"HdiByocLS_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"HdiOnDemand_properties_typeProperties_hostSubscriptionId": {
+			"value": "8e94fd59-3676-45d7-beb4-7d31e0401e04"
+		},
+		"HdiOnDemand_properties_typeProperties_clusterResourceGroup": {
+			"value": "adf"
+		},
+		"HdiOnDemand_properties_typeProperties_servicePrincipalId": {
+			"value": "24ad92f5-bea4-45c1-b5b0-f80f59292ddc"
+		},
+		"HdiOnDemand_properties_typeProperties_tenant": {
+			"value": "63296244-ce2c-46d8-bc36-3e558792fbee"
+		},
+		"HdiOnDemand_properties_typeProperties_clusterUserName": {
+			"value": "admin"
+		},
+		"HdiOnDemand_properties_typeProperties_clusterSshUserName": {
+			"value": "sshadmin"
+		},
+		"HdiOnDemandInPublic_properties_typeProperties_hostSubscriptionId": {
+			"value": "1e42591f-1f0c-4c5a-b7f2-a268f6105ec5"
+		},
+		"HdiOnDemandInPublic_properties_typeProperties_clusterResourceGroup": {
+			"value": "adf"
+		},
+		"HdiOnDemandInPublic_properties_typeProperties_servicePrincipalId": {
+			"value": "356e6faf-aa84-4329-9786-87a958b91e2b"
+		},
+		"HdiOnDemandInPublic_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"HdiOnDemandPub_properties_typeProperties_hostSubscriptionId": {
+			"value": "8e94fd59-3676-45d7-beb4-7d31e0401e04"
+		},
+		"HdiOnDemandPub_properties_typeProperties_clusterResourceGroup": {
+			"value": "adf"
+		},
+		"HdiOnDemandPub_properties_typeProperties_servicePrincipalId": {
+			"value": "24ad92f5-bea4-45c1-b5b0-f80f59292ddc"
+		},
+		"HdiOnDemandPub_properties_typeProperties_tenant": {
+			"value": "63296244-ce2c-46d8-bc36-3e558792fbee"
+		},
+		"ahwffBatchLinkedService_properties_typeProperties_accountName": {
+			"value": "examplebatch"
+		},
+		"ahwffpubBatchLinkedService_properties_typeProperties_accountName": {
+			"value": "arthurwbatch"
+		},
+		"linkedService1_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting": {
+			"value": "@{concat('Hello 5 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+		},
+		"ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting": {
+			"value": "@{concat('Hello 5 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+		}
+	}
+}

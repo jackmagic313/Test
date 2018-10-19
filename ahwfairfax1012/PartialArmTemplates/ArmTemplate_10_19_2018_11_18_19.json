@@ -6,306 +6,6 @@
 			"type": "string",
 			"metadata": "Data Factory Name",
 			"defaultValue": "ahwfairfax1012"
-		},
-		"AzureBlobStorage1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
-		},
-		"AzureBlobStorage2_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage2'"
-		},
-		"HdiByoc_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'HdiByoc'"
-		},
-		"HdiByocLS_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'HdiByocLS'"
-		},
-		"HdiOnDemand_clusterPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterPassword' of 'HdiOnDemand'"
-		},
-		"HdiOnDemand_clusterSshPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterSshPassword' of 'HdiOnDemand'"
-		},
-		"HdiOnDemand_servicePrincipalKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'servicePrincipalKey' of 'HdiOnDemand'"
-		},
-		"HdiOnDemandInPublic_clusterPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterPassword' of 'HdiOnDemandInPublic'"
-		},
-		"HdiOnDemandInPublic_clusterSshPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterSshPassword' of 'HdiOnDemandInPublic'"
-		},
-		"HdiOnDemandInPublic_servicePrincipalKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'servicePrincipalKey' of 'HdiOnDemandInPublic'"
-		},
-		"HdiOnDemandPub_clusterPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterPassword' of 'HdiOnDemandPub'"
-		},
-		"HdiOnDemandPub_clusterSshPassword": {
-			"type": "secureString",
-			"metadata": "Secure string for 'clusterSshPassword' of 'HdiOnDemandPub'"
-		},
-		"HdiOnDemandPub_servicePrincipalKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'servicePrincipalKey' of 'HdiOnDemandPub'"
-		},
-		"ahwffBatchLinkedService_accessKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessKey' of 'ahwffBatchLinkedService'"
-		},
-		"ahwffBatchStorageLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffBatchStorageLinkedService'"
-		},
-		"ahwffSqlLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffSqlLinkedService'"
-		},
-		"ahwffStorageLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffStorageLinkedService'"
-		},
-		"ahwffStorageLinkedServiceWithManagedIR_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffStorageLinkedServiceWithManagedIR'"
-		},
-		"ahwffpubBatchLinkedService_accessKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accessKey' of 'ahwffpubBatchLinkedService'"
-		},
-		"ahwffpubBatchStorageLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffpubBatchStorageLinkedService'"
-		},
-		"ahwffpubSqlLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffpubSqlLinkedService'"
-		},
-		"ahwffpubStorageLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffpubStorageLinkedService'"
-		},
-		"ahwffpubStorageLinkedServiceWithManagedIR_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ahwffpubStorageLinkedServiceWithManagedIR'"
-		},
-		"linkedService1_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'linkedService1'"
-		},
-		"DestinationDataset_7kl_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "copywizout.csv"
-		},
-		"DestinationDataset_7kl_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashout"
-		},
-		"DestinationDataset_w0y_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "copywizstagedout.csv"
-		},
-		"DestinationDataset_w0y_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashout"
-		},
-		"SourceDataset_7kl_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "entitylogs.csv"
-		},
-		"SourceDataset_7kl_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"SourceDataset_w0y_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "entitylogs.csv"
-		},
-		"SourceDataset_w0y_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"ahwffBlobDatasetIn_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "entitylogs.csv"
-		},
-		"ahwffBlobDatasetIn_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"ahwffBlobDatasetInFolderOnly_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"ahwffBlobDatasetInParameterized_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@dataset().fileName"
-		},
-		"ahwffBlobDatasetInParameterized_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffBlobDatasetJson_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@dataset().fileName"
-		},
-		"ahwffBlobDatasetJson_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffBlobDatasetOut_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@concat('ahwff_', dataset().fileName)"
-		},
-		"ahwffBlobDatasetOut_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@concat('ahwff_', dataset().fileName)"
-		},
-		"ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffpubBlobDatasetIn_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "entitylogs.csv"
-		},
-		"ahwffpubBlobDatasetIn_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"ahwffpubBlobDatasetInFolderOnly_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "bashin"
-		},
-		"ahwffpubBlobDatasetInParameterized_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@dataset().fileName"
-		},
-		"ahwffpubBlobDatasetInParameterized_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffpubBlobDatasetJson_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@dataset().fileName"
-		},
-		"ahwffpubBlobDatasetJson_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffpubBlobDatasetOut_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@concat('ahwffpub_', dataset().fileName)"
-		},
-		"ahwffpubBlobDatasetOut_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_fileName": {
-			"type": "string",
-			"defaultValue": "@concat('ahwffpub_', dataset().fileName)"
-		},
-		"ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath": {
-			"type": "string",
-			"defaultValue": "@dataset().folderPath"
-		},
-		"HdiByoc_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "admin"
-		},
-		"HdiByocLS_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "admin"
-		},
-		"HdiOnDemand_properties_typeProperties_hostSubscriptionId": {
-			"type": "string",
-			"defaultValue": "8e94fd59-3676-45d7-beb4-7d31e0401e04"
-		},
-		"HdiOnDemand_properties_typeProperties_clusterResourceGroup": {
-			"type": "string",
-			"defaultValue": "adf"
-		},
-		"HdiOnDemand_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "24ad92f5-bea4-45c1-b5b0-f80f59292ddc"
-		},
-		"HdiOnDemand_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "63296244-ce2c-46d8-bc36-3e558792fbee"
-		},
-		"HdiOnDemand_properties_typeProperties_clusterUserName": {
-			"type": "string",
-			"defaultValue": "admin"
-		},
-		"HdiOnDemand_properties_typeProperties_clusterSshUserName": {
-			"type": "string",
-			"defaultValue": "sshadmin"
-		},
-		"HdiOnDemandInPublic_properties_typeProperties_hostSubscriptionId": {
-			"type": "string",
-			"defaultValue": "1e42591f-1f0c-4c5a-b7f2-a268f6105ec5"
-		},
-		"HdiOnDemandInPublic_properties_typeProperties_clusterResourceGroup": {
-			"type": "string",
-			"defaultValue": "adf"
-		},
-		"HdiOnDemandInPublic_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "356e6faf-aa84-4329-9786-87a958b91e2b"
-		},
-		"HdiOnDemandInPublic_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"HdiOnDemandPub_properties_typeProperties_hostSubscriptionId": {
-			"type": "string",
-			"defaultValue": "8e94fd59-3676-45d7-beb4-7d31e0401e04"
-		},
-		"HdiOnDemandPub_properties_typeProperties_clusterResourceGroup": {
-			"type": "string",
-			"defaultValue": "adf"
-		},
-		"HdiOnDemandPub_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "24ad92f5-bea4-45c1-b5b0-f80f59292ddc"
-		},
-		"HdiOnDemandPub_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "63296244-ce2c-46d8-bc36-3e558792fbee"
-		},
-		"ahwffBatchLinkedService_properties_typeProperties_accountName": {
-			"type": "string",
-			"defaultValue": "examplebatch"
-		},
-		"ahwffpubBatchLinkedService_properties_typeProperties_accountName": {
-			"type": "string",
-			"defaultValue": "arthurwbatch"
-		},
-		"linkedService1_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "admin"
-		},
-		"ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting": {
-			"type": "string",
-			"defaultValue": "@{concat('Hello 5 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
-		},
-		"ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting": {
-			"type": "string",
-			"defaultValue": "@{concat('Hello 5 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 		}
 	},
 	"variables": {
@@ -321,7 +21,6 @@
 					{
 						"name": "Copy_7kl",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -353,20 +52,17 @@
 						"inputs": [
 							{
 								"referenceName": "SourceDataset_7kl",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "DestinationDataset_7kl",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/SourceDataset_7kl')]",
@@ -383,7 +79,6 @@
 					{
 						"name": "Copy_w0y",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -422,25 +117,21 @@
 						"inputs": [
 							{
 								"referenceName": "SourceDataset_w0y",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "DestinationDataset_w0y",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/SourceDataset_w0y')]",
-				"[concat(variables('factoryId'), '/datasets/DestinationDataset_w0y')]",
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
+				"[concat(variables('factoryId'), '/datasets/DestinationDataset_w0y')]"
 			]
 		},
 		{
@@ -452,7 +143,6 @@
 					{
 						"name": "Hive1",
 						"type": "HDInsightHive",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -460,7 +150,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"scriptPath": "hive1/Unnamed",
 							"scriptLinkedService": {
@@ -473,13 +162,8 @@
 							"type": "LinkedServiceReference"
 						}
 					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage2')]",
-				"[concat(variables('factoryId'), '/linkedServices/HdiByocLS')]"
-			]
+				]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/HdiOnDemandTest')]",
@@ -490,7 +174,6 @@
 					{
 						"name": "HiveOnDemand",
 						"type": "HDInsightHive",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -498,7 +181,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"scriptPath": "hive1/Unnamed",
 							"scriptLinkedService": {
@@ -511,13 +193,8 @@
 							"type": "LinkedServiceReference"
 						}
 					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]",
-				"[concat(variables('factoryId'), '/linkedServices/HdiByoc')]"
-			]
+				]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffManualControl')]",
@@ -529,8 +206,6 @@
 					{
 						"name": "Set Variable1",
 						"type": "SetVariable",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"variableName": "StringVar",
 							"value": {
@@ -550,7 +225,6 @@
 								]
 							}
 						],
-						"userProperties": [],
 						"typeProperties": {
 							"expression": {
 								"value": "@equals(length(variables('StringVar')), 0)",
@@ -560,8 +234,6 @@
 								{
 									"name": "Set Variable1 Inner",
 									"type": "SetVariable",
-									"dependsOn": [],
-									"userProperties": [],
 									"typeProperties": {
 										"variableName": "StringVar2",
 										"value": {
@@ -581,7 +253,6 @@
 											]
 										}
 									],
-									"userProperties": [],
 									"typeProperties": {
 										"variableName": "StringVar",
 										"value": {
@@ -597,8 +268,6 @@
 					{
 						"name": "Filter1",
 						"type": "Filter",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"items": {
 								"value": "@json(replace(pipeline().parameters.NumArrayString, '_', ''))",
@@ -613,7 +282,6 @@
 					{
 						"name": "Execute Pipeline1",
 						"type": "ExecutePipeline",
-						"dependsOn": [],
 						"userProperties": [
 							{
 								"name": "FirstUserProperty",
@@ -673,7 +341,6 @@
 					{
 						"name": "CopyBlobToBlob",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -681,7 +348,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -696,8 +362,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -726,8 +391,7 @@
 						"type": "String",
 						"defaultValue": "bashout"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetIn')]",
@@ -743,7 +407,6 @@
 					{
 						"name": "CanonicalStart",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -751,7 +414,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -789,7 +451,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -804,8 +465,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -840,7 +500,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -875,7 +534,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -897,8 +555,7 @@
 					"TakeSuccessPath": {
 						"type": "Bool"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetIn')]",
@@ -915,7 +572,6 @@
 					{
 						"name": "CanonicalStart",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -923,7 +579,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -961,7 +616,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -976,8 +630,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1012,7 +665,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -1047,7 +699,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -1069,8 +720,7 @@
 					"TakeSuccessPath": {
 						"type": "Bool"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetIn')]",
@@ -1086,7 +736,6 @@
 					{
 						"name": "CopySqlToBlob1",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -1094,7 +743,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -1108,8 +756,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1147,7 +794,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1207,7 +853,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1222,8 +867,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1258,7 +902,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1273,8 +916,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1315,7 +957,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -1329,8 +970,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1368,7 +1008,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1428,7 +1067,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1443,8 +1081,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1479,7 +1116,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1494,8 +1130,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -1525,8 +1160,7 @@
 						"type": "Bool",
 						"defaultValue": false
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffSqlDatasetIn')]",
@@ -1543,13 +1177,11 @@
 					{
 						"name": "CustomBatchTest",
 						"type": "Custom",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "00:03:00",
 							"retry": 1,
 							"retryIntervalInSeconds": 30
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"command": {
 								"value": "Arthurw@{pipeline().parameters.test}Custom.exe",
@@ -1605,7 +1237,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -1632,13 +1263,10 @@
 						"defaultValue": "Test"
 					}
 				},
-				"annotations": [],
 				"concurrency": 1
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]",
-				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetOut')]",
-				"[concat(variables('factoryId'), '/linkedServices/ahwffBatchLinkedService')]"
+				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetOut')]"
 			]
 		},
 		{
@@ -1650,7 +1278,6 @@
 					{
 						"name": "LookupManyInputsList",
 						"type": "Lookup",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -1658,7 +1285,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -1685,7 +1311,6 @@
 								]
 							}
 						],
-						"userProperties": [],
 						"typeProperties": {
 							"items": {
 								"value": "@activity('LookupManyInputsList').output.firstRow.fileNames",
@@ -1697,7 +1322,6 @@
 								{
 									"name": "CopyOneOfManyInputs",
 									"type": "Copy",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -1705,7 +1329,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"source": {
 											"type": "BlobSource",
@@ -1765,7 +1388,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -1782,8 +1404,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetJson')]",
@@ -1800,8 +1421,6 @@
 					{
 						"name": "ForEachIndex",
 						"type": "ForEach",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"items": {
 								"value": "@range(0, length(pipeline().parameters.dataset))",
@@ -1812,7 +1431,6 @@
 								{
 									"name": "WebFromForEachIndex",
 									"type": "WebActivity",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -1820,7 +1438,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 										"method": "POST",
@@ -1848,10 +1465,8 @@
 					"dataset": {
 						"type": "Array"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffPipelineGetMetadata')]",
@@ -1862,7 +1477,6 @@
 					{
 						"name": "GetMetadata",
 						"type": "GetMetadata",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -1870,12 +1484,10 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"dataset": {
 								"referenceName": "ahwffBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						}
 					},
@@ -1897,7 +1509,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -1917,8 +1528,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetIn')]"
@@ -1933,8 +1543,6 @@
 					{
 						"name": "IfConditionSimple",
 						"type": "IfCondition",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"expression": {
 								"value": "@greater(pipeline().parameters.Number, 3)",
@@ -1944,8 +1552,6 @@
 								{
 									"name": "WaitFromIfFalse",
 									"type": "Wait",
-									"dependsOn": [],
-									"userProperties": [],
 									"typeProperties": {
 										"waitTimeInSeconds": 5
 									}
@@ -1955,7 +1561,6 @@
 								{
 									"name": "WebFromIfTrue",
 									"type": "WebActivity",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -1963,7 +1568,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 										"method": "POST",
@@ -1991,10 +1595,8 @@
 					"Number": {
 						"type": "Int"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffPipelineLookupAndExecute')]",
@@ -2005,7 +1607,6 @@
 					{
 						"name": "Lookup",
 						"type": "Lookup",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2013,7 +1614,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2040,7 +1640,6 @@
 								]
 							}
 						],
-						"userProperties": [],
 						"typeProperties": {
 							"pipeline": {
 								"referenceName": "ahwffPipelineBlobToBlob",
@@ -2055,8 +1654,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffBlobDatasetJson')]",
@@ -2073,17 +1671,13 @@
 					{
 						"name": "MyWait",
 						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": 5
 						}
 					}
 				],
-				"annotations": [],
 				"concurrency": 15
-			},
-			"dependsOn": []
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffPipelineSproc')]",
@@ -2095,7 +1689,6 @@
 					{
 						"name": "SqlSproc",
 						"type": "SqlServerStoredProcedure",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2103,7 +1696,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"storedProcedureName": "sp_sqlexec",
 							"storedProcedureParameters": {
@@ -2118,12 +1710,8 @@
 							"type": "LinkedServiceReference"
 						}
 					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffSqlLinkedService')]"
-			]
+				]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffPipelineSqlToBlob')]",
@@ -2134,7 +1722,6 @@
 					{
 						"name": "CopySqlToBlob",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2142,7 +1729,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -2156,8 +1742,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2179,8 +1764,7 @@
 					"OutputBlobName": {
 						"type": "String"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffSqlDatasetIn')]",
@@ -2196,7 +1780,6 @@
 					{
 						"name": "WebFromWeb",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2204,7 +1787,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
 							"method": "POST",
@@ -2229,10 +1811,8 @@
 					"Greeting": {
 						"type": "String"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubPipelineBlobToBlob')]",
@@ -2243,7 +1823,6 @@
 					{
 						"name": "CopyBlobToBlob",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2251,7 +1830,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2266,8 +1844,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2296,8 +1873,7 @@
 						"type": "String",
 						"defaultValue": "bashout"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetIn')]",
@@ -2313,7 +1889,6 @@
 					{
 						"name": "CanonicalStart",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2321,7 +1896,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2359,7 +1933,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2374,8 +1947,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2410,7 +1982,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2445,7 +2016,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2467,8 +2037,7 @@
 					"TakeSuccessPath": {
 						"type": "Bool"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetIn')]",
@@ -2485,7 +2054,6 @@
 					{
 						"name": "CanonicalStart",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2493,7 +2061,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2531,7 +2098,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2546,8 +2112,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2582,7 +2147,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2617,7 +2181,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -2639,8 +2202,7 @@
 					"TakeSuccessPath": {
 						"type": "Bool"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetIn')]",
@@ -2656,7 +2218,6 @@
 					{
 						"name": "CopySqlToBlob1",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -2664,7 +2225,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -2678,8 +2238,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2717,7 +2276,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2777,7 +2335,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2792,8 +2349,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2828,7 +2384,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2843,8 +2398,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2885,7 +2439,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -2899,8 +2452,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -2938,7 +2490,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -2998,7 +2549,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -3013,8 +2563,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -3049,7 +2598,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -3064,8 +2612,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -3095,8 +2642,7 @@
 						"type": "Bool",
 						"defaultValue": false
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubSqlDatasetIn')]",
@@ -3113,13 +2659,11 @@
 					{
 						"name": "CustomBatchTest",
 						"type": "Custom",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "00:03:00",
 							"retry": 1,
 							"retryIntervalInSeconds": 30
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"command": {
 								"value": "Arthurw@{pipeline().parameters.test}Custom.exe",
@@ -3175,7 +2719,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -3202,13 +2745,10 @@
 						"defaultValue": "Test"
 					}
 				},
-				"annotations": [],
 				"concurrency": 1
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]",
-				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetOut')]",
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubBatchLinkedService')]"
+				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetOut')]"
 			]
 		},
 		{
@@ -3220,7 +2760,6 @@
 					{
 						"name": "LookupManyInputsList",
 						"type": "Lookup",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3228,7 +2767,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -3255,7 +2793,6 @@
 								]
 							}
 						],
-						"userProperties": [],
 						"typeProperties": {
 							"items": {
 								"value": "@activity('LookupManyInputsList').output.firstRow.fileNames",
@@ -3267,7 +2804,6 @@
 								{
 									"name": "CopyOneOfManyInputs",
 									"type": "Copy",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -3275,7 +2811,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"source": {
 											"type": "BlobSource",
@@ -3335,7 +2870,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -3352,8 +2886,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetJson')]",
@@ -3370,8 +2903,6 @@
 					{
 						"name": "ForEachIndex",
 						"type": "ForEach",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"items": {
 								"value": "@range(0, length(pipeline().parameters.dataset))",
@@ -3382,7 +2913,6 @@
 								{
 									"name": "WebFromForEachIndex",
 									"type": "WebActivity",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -3390,7 +2920,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 										"method": "POST",
@@ -3418,10 +2947,8 @@
 					"dataset": {
 						"type": "Array"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubPipelineGetMetadata')]",
@@ -3432,7 +2959,6 @@
 					{
 						"name": "GetMetadata",
 						"type": "GetMetadata",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3440,12 +2966,10 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"dataset": {
 								"referenceName": "ahwffpubBlobDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						}
 					},
@@ -3467,7 +2991,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -3487,8 +3010,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetIn')]"
@@ -3503,8 +3025,6 @@
 					{
 						"name": "IfConditionSimple",
 						"type": "IfCondition",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"expression": {
 								"value": "@greater(pipeline().parameters.Number, 3)",
@@ -3514,8 +3034,6 @@
 								{
 									"name": "WaitFromIfFalse",
 									"type": "Wait",
-									"dependsOn": [],
-									"userProperties": [],
 									"typeProperties": {
 										"waitTimeInSeconds": 5
 									}
@@ -3525,7 +3043,6 @@
 								{
 									"name": "WebFromIfTrue",
 									"type": "WebActivity",
-									"dependsOn": [],
 									"policy": {
 										"timeout": "7.00:00:00",
 										"retry": 0,
@@ -3533,7 +3050,6 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
 									"typeProperties": {
 										"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 										"method": "POST",
@@ -3561,10 +3077,8 @@
 					"Number": {
 						"type": "Int"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubPipelineLookupAndExecute')]",
@@ -3575,7 +3089,6 @@
 					{
 						"name": "Lookup",
 						"type": "Lookup",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3583,7 +3096,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "BlobSource",
@@ -3610,7 +3122,6 @@
 								]
 							}
 						],
-						"userProperties": [],
 						"typeProperties": {
 							"pipeline": {
 								"referenceName": "ahwffpubPipelineBlobToBlob",
@@ -3625,8 +3136,7 @@
 							}
 						}
 					}
-				],
-				"annotations": []
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubBlobDatasetJson')]",
@@ -3643,17 +3153,13 @@
 					{
 						"name": "MyWait",
 						"type": "Wait",
-						"dependsOn": [],
-						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": 5
 						}
 					}
 				],
-				"annotations": [],
 				"concurrency": 15
-			},
-			"dependsOn": []
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubPipelineSproc')]",
@@ -3664,7 +3170,6 @@
 					{
 						"name": "SqlSproc",
 						"type": "SqlServerStoredProcedure",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3672,7 +3177,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"storedProcedureName": "sp_sqlexec",
 							"storedProcedureParameters": {
@@ -3687,12 +3191,8 @@
 							"type": "LinkedServiceReference"
 						}
 					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubSqlLinkedService')]"
-			]
+				]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubPipelineSqlToBlob')]",
@@ -3703,7 +3203,6 @@
 					{
 						"name": "CopySqlToBlob",
 						"type": "Copy",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3711,7 +3210,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"source": {
 								"type": "SqlSource"
@@ -3725,8 +3223,7 @@
 						"inputs": [
 							{
 								"referenceName": "ahwffpubSqlDatasetIn",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
@@ -3748,8 +3245,7 @@
 					"OutputBlobName": {
 						"type": "String"
 					}
-				},
-				"annotations": []
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ahwffpubSqlDatasetIn')]",
@@ -3765,7 +3261,6 @@
 					{
 						"name": "WebFromWeb",
 						"type": "WebActivity",
-						"dependsOn": [],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -3773,7 +3268,6 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
 						"typeProperties": {
 							"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
 							"method": "POST",
@@ -3798,10 +3292,8 @@
 					"Greeting": {
 						"type": "String"
 					}
-				},
-				"annotations": []
-			},
-			"dependsOn": []
+				}
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/DestinationDataset_7kl')]",
@@ -3812,7 +3304,6 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -3824,13 +3315,10 @@
 						"skipLineCount": 0,
 						"firstRowAsHeader": false
 					},
-					"fileName": "[parameters('DestinationDataset_7kl_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('DestinationDataset_7kl_properties_typeProperties_folderPath')]"
+					"fileName": "copywizout.csv",
+					"folderPath": "bashout"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/DestinationDataset_w0y')]",
@@ -3841,7 +3329,6 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -3853,13 +3340,10 @@
 						"skipLineCount": 0,
 						"firstRowAsHeader": false
 					},
-					"fileName": "[parameters('DestinationDataset_w0y_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('DestinationDataset_w0y_properties_typeProperties_folderPath')]"
+					"fileName": "copywizstagedout.csv",
+					"folderPath": "bashout"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/SourceDataset_7kl')]",
@@ -3870,7 +3354,6 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"structure": [
 					{
@@ -3909,13 +3392,10 @@
 						"skipLineCount": 0,
 						"firstRowAsHeader": false
 					},
-					"fileName": "[parameters('SourceDataset_7kl_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('SourceDataset_7kl_properties_typeProperties_folderPath')]"
+					"fileName": "entitylogs.csv",
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/SourceDataset_w0y')]",
@@ -3926,7 +3406,6 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"structure": [
 					{
@@ -3965,13 +3444,10 @@
 						"skipLineCount": 0,
 						"firstRowAsHeader": false
 					},
-					"fileName": "[parameters('SourceDataset_w0y_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('SourceDataset_w0y_properties_typeProperties_folderPath')]"
+					"fileName": "entitylogs.csv",
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetIn')]",
@@ -3982,20 +3458,16 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
 						"type": "TextFormat",
 						"treatEmptyAsNull": true
 					},
-					"fileName": "[parameters('ahwffBlobDatasetIn_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('ahwffBlobDatasetIn_properties_typeProperties_folderPath')]"
+					"fileName": "entitylogs.csv",
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetInFolderOnly')]",
@@ -4006,15 +3478,11 @@
 					"referenceName": "ahwffStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
-					"folderPath": "[parameters('ahwffBlobDatasetInFolderOnly_properties_typeProperties_folderPath')]"
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetInParameterized')]",
@@ -4033,7 +3501,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4041,18 +3508,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffBlobDatasetInParameterized_properties_typeProperties_fileName')]",
+						"value": "@dataset().fileName",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffBlobDatasetInParameterized_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetJson')]",
@@ -4071,25 +3535,21 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
 						"type": "JsonFormat"
 					},
 					"fileName": {
-						"value": "[parameters('ahwffBlobDatasetJson_properties_typeProperties_fileName')]",
+						"value": "@dataset().fileName",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffBlobDatasetJson_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetOut')]",
@@ -4108,7 +3568,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4116,18 +3575,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffBlobDatasetOut_properties_typeProperties_fileName')]",
+						"value": "@concat('ahwff_', dataset().fileName)",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffBlobDatasetOut_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffBlobDatasetOutWithManagedIR')]",
@@ -4146,7 +3602,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4154,18 +3609,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_fileName')]",
+						"value": "@concat('ahwff_', dataset().fileName)",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedServiceWithManagedIR')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffSqlDatasetIn')]",
@@ -4176,7 +3628,6 @@
 					"referenceName": "ahwffSqlLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureSqlTable",
 				"structure": [
 					{
@@ -4199,10 +3650,7 @@
 				"typeProperties": {
 					"tableName": "EntityCreation"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffSqlLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetIn')]",
@@ -4213,20 +3661,16 @@
 					"referenceName": "ahwffpubStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
 						"type": "TextFormat",
 						"treatEmptyAsNull": true
 					},
-					"fileName": "[parameters('ahwffpubBlobDatasetIn_properties_typeProperties_fileName')]",
-					"folderPath": "[parameters('ahwffpubBlobDatasetIn_properties_typeProperties_folderPath')]"
+					"fileName": "entitylogs.csv",
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetInFolderOnly')]",
@@ -4237,15 +3681,11 @@
 					"referenceName": "ahwffpubStorageLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
-					"folderPath": "[parameters('ahwffpubBlobDatasetInFolderOnly_properties_typeProperties_folderPath')]"
+					"folderPath": "bashin"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetInParameterized')]",
@@ -4264,7 +3704,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4272,18 +3711,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffpubBlobDatasetInParameterized_properties_typeProperties_fileName')]",
+						"value": "@dataset().fileName",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffpubBlobDatasetInParameterized_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetJson')]",
@@ -4302,25 +3738,21 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
 						"type": "JsonFormat"
 					},
 					"fileName": {
-						"value": "[parameters('ahwffpubBlobDatasetJson_properties_typeProperties_fileName')]",
+						"value": "@dataset().fileName",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffpubBlobDatasetJson_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetOut')]",
@@ -4339,7 +3771,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4347,18 +3778,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffpubBlobDatasetOut_properties_typeProperties_fileName')]",
+						"value": "@concat('ahwffpub_', dataset().fileName)",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffpubBlobDatasetOut_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubBlobDatasetOutWithManagedIR')]",
@@ -4377,7 +3805,6 @@
 						"type": "string"
 					}
 				},
-				"annotations": [],
 				"type": "AzureBlob",
 				"typeProperties": {
 					"format": {
@@ -4385,18 +3812,15 @@
 						"treatEmptyAsNull": true
 					},
 					"fileName": {
-						"value": "[parameters('ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_fileName')]",
+						"value": "@concat('ahwffpub_', dataset().fileName)",
 						"type": "Expression"
 					},
 					"folderPath": {
-						"value": "[parameters('ahwffpubBlobDatasetOutWithManagedIR_properties_typeProperties_folderPath')]",
+						"value": "@dataset().folderPath",
 						"type": "Expression"
 					}
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedServiceWithManagedIR')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffpubSqlDatasetIn')]",
@@ -4407,7 +3831,6 @@
 					"referenceName": "ahwffpubSqlLinkedService",
 					"type": "LinkedServiceReference"
 				},
-				"annotations": [],
 				"type": "AzureSqlTable",
 				"structure": [
 					{
@@ -4430,410 +3853,13 @@
 				"typeProperties": {
 					"tableName": "EntityCreation"
 				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubSqlLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage2')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage2_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HdiByoc')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsight",
-				"typeProperties": {
-					"clusterUri": "https://hvbyocff.azurehdinsight.us",
-					"userName": "[parameters('HdiByoc_properties_typeProperties_userName')]",
-					"password": {
-						"type": "SecureString",
-						"value": "[parameters('HdiByoc_password')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "ahwffStorageLinkedService",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HdiByocLS')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsight",
-				"typeProperties": {
-					"clusterUri": "https://hvbyocffnewstorage.azurehdinsight.us",
-					"userName": "[parameters('HdiByocLS_properties_typeProperties_userName')]",
-					"password": {
-						"type": "SecureString",
-						"value": "[parameters('HdiByocLS_password')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "AzureBlobStorage2",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage2')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HdiOnDemand')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsightOnDemand",
-				"typeProperties": {
-					"clusterType": "hadoop",
-					"clusterSize": 1,
-					"timeToLive": "00:20:00",
-					"version": "3.6",
-					"hostSubscriptionId": "[parameters('HdiOnDemand_properties_typeProperties_hostSubscriptionId')]",
-					"clusterResourceGroup": "[parameters('HdiOnDemand_properties_typeProperties_clusterResourceGroup')]",
-					"servicePrincipalId": "[parameters('HdiOnDemand_properties_typeProperties_servicePrincipalId')]",
-					"osType": "Linux",
-					"tenant": "[parameters('HdiOnDemand_properties_typeProperties_tenant')]",
-					"clusterNamePrefix": "ff-",
-					"clusterUserName": "[parameters('HdiOnDemand_properties_typeProperties_clusterUserName')]",
-					"clusterPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemand_clusterPassword')]"
-					},
-					"clusterSshUserName": "[parameters('HdiOnDemand_properties_typeProperties_clusterSshUserName')]",
-					"clusterSshPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemand_clusterSshPassword')]"
-					},
-					"servicePrincipalKey": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemand_servicePrincipalKey')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "ahwffStorageLinkedService",
-						"type": "LinkedServiceReference"
-					},
-					"headNodeSize": "",
-					"dataNodeSize": "",
-					"zookeeperNodeSize": ""
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HdiOnDemandInPublic')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsightOnDemand",
-				"typeProperties": {
-					"clusterType": "hadoop",
-					"clusterSize": 1,
-					"timeToLive": "00:05:00",
-					"version": "3.6",
-					"hostSubscriptionId": "[parameters('HdiOnDemandInPublic_properties_typeProperties_hostSubscriptionId')]",
-					"clusterResourceGroup": "[parameters('HdiOnDemandInPublic_properties_typeProperties_clusterResourceGroup')]",
-					"servicePrincipalId": "[parameters('HdiOnDemandInPublic_properties_typeProperties_servicePrincipalId')]",
-					"tenant": "[parameters('HdiOnDemandInPublic_properties_typeProperties_tenant')]",
-					"clusterNamePrefix": "ffpub-",
-					"clusterPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandInPublic_clusterPassword')]"
-					},
-					"clusterSshPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandInPublic_clusterSshPassword')]"
-					},
-					"servicePrincipalKey": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandInPublic_servicePrincipalKey')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "ahwffpubStorageLinkedService",
-						"type": "LinkedServiceReference"
-					},
-					"headNodeSize": "",
-					"dataNodeSize": "",
-					"zookeeperNodeSize": ""
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HdiOnDemandPub')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsightOnDemand",
-				"typeProperties": {
-					"clusterType": "hadoop",
-					"clusterSize": 1,
-					"timeToLive": "00:25:00",
-					"version": "3.6",
-					"hostSubscriptionId": "[parameters('HdiOnDemandPub_properties_typeProperties_hostSubscriptionId')]",
-					"clusterResourceGroup": "[parameters('HdiOnDemandPub_properties_typeProperties_clusterResourceGroup')]",
-					"servicePrincipalId": "[parameters('HdiOnDemandPub_properties_typeProperties_servicePrincipalId')]",
-					"tenant": "[parameters('HdiOnDemandPub_properties_typeProperties_tenant')]",
-					"clusterNamePrefix": "ffpub-",
-					"clusterPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandPub_clusterPassword')]"
-					},
-					"clusterSshPassword": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandPub_clusterSshPassword')]"
-					},
-					"servicePrincipalKey": {
-						"type": "SecureString",
-						"value": "[parameters('HdiOnDemandPub_servicePrincipalKey')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "ahwffpubStorageLinkedService",
-						"type": "LinkedServiceReference"
-					},
-					"headNodeSize": "",
-					"dataNodeSize": "",
-					"zookeeperNodeSize": ""
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffBatchLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBatch",
-				"typeProperties": {
-					"accountName": "[parameters('ahwffBatchLinkedService_properties_typeProperties_accountName')]",
-					"accessKey": {
-						"type": "SecureString",
-						"value": "[parameters('ahwffBatchLinkedService_accessKey')]"
-					},
-					"batchUri": "https://examplebatch.usgovtexas.batch.usgovcloudapi.net",
-					"poolName": "examplepool",
-					"linkedServiceName": {
-						"referenceName": "ahwffBatchStorageLinkedService",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffBatchStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffBatchStorageLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffBatchStorageLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffSqlLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffSqlLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffStorageLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffStorageLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffStorageLinkedServiceWithManagedIR')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffStorageLinkedServiceWithManagedIR_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "ahwffIntegrationRuntimeCloud",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/ahwffIntegrationRuntimeCloud')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubBatchLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBatch",
-				"typeProperties": {
-					"accountName": "[parameters('ahwffpubBatchLinkedService_properties_typeProperties_accountName')]",
-					"accessKey": {
-						"type": "SecureString",
-						"value": "[parameters('ahwffpubBatchLinkedService_accessKey')]"
-					},
-					"batchUri": "https://arthurwbatch.eastus.batch.azure.com",
-					"poolName": "examplepool",
-					"linkedServiceName": {
-						"referenceName": "ahwffpubBatchStorageLinkedService",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ahwffpubBatchStorageLinkedService')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubBatchStorageLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffpubBatchStorageLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubSqlLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffpubSqlLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubStorageLinkedService')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffpubStorageLinkedService_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubStorageLinkedServiceWithManagedIR')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('ahwffpubStorageLinkedServiceWithManagedIR_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "ahwffpubIntegrationRuntimeCloud",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/ahwffpubIntegrationRuntimeCloud')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/linkedService1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "HDInsight",
-				"typeProperties": {
-					"clusterUri": "https://hvbyocffnewstorage.azurehdinsight.us/",
-					"userName": "[parameters('linkedService1_properties_typeProperties_userName')]",
-					"password": {
-						"type": "SecureString",
-						"value": "[parameters('linkedService1_password')]"
-					},
-					"linkedServiceName": {
-						"referenceName": "AzureBlobStorage2",
-						"type": "LinkedServiceReference"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage2')]"
-			]
+			}
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ahwffTriggerMultipleWeb')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipelines": [
 					{
@@ -4842,7 +3868,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 1 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4851,7 +3877,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 2 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4860,7 +3886,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 3 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4869,7 +3895,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 4 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4878,7 +3904,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffTriggerMultipleWeb_properties_ahwffPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 5 from TriggerMultipleWeb ahwff at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					}
 				],
@@ -4902,15 +3928,13 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
 							"referenceName": "ahwffPipelineSingleWait",
 							"type": "PipelineReference"
-						},
-						"parameters": {}
+						}
 					}
 				],
 				"type": "ScheduleTrigger",
@@ -4933,14 +3957,12 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "ahwffPipelineSingleWait",
 						"type": "PipelineReference"
-					},
-					"parameters": {}
+					}
 				},
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
@@ -4948,8 +3970,7 @@
 					"interval": 15,
 					"startTime": "2018-10-16T17:04:12.9539318Z",
 					"endTime": "2018-10-16T20:49:12.9539318Z",
-					"maxConcurrency": 10,
-					"retryPolicy": {}
+					"maxConcurrency": 10
 				}
 			},
 			"dependsOn": [
@@ -4961,7 +3982,6 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipelines": [
 					{
@@ -4970,7 +3990,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 1 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4979,7 +3999,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 2 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4988,7 +4008,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 3 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -4997,7 +4017,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 4 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					},
 					{
@@ -5006,7 +4026,7 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {
-							"Greeting": "[parameters('ahwffpubTriggerMultipleWeb_properties_ahwffpubPipelineWeb_parameters_Greeting')]"
+							"Greeting": "@{concat('Hello 5 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
 						}
 					}
 				],
@@ -5030,15 +4050,13 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
 							"referenceName": "ahwffpubPipelineSingleWait",
 							"type": "PipelineReference"
-						},
-						"parameters": {}
+						}
 					}
 				],
 				"type": "ScheduleTrigger",
@@ -5061,14 +4079,12 @@
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"annotations": [],
 				"runtimeState": "Stopped",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "ahwffpubPipelineSingleWait",
 						"type": "PipelineReference"
-					},
-					"parameters": {}
+					}
 				},
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
@@ -5076,41 +4092,12 @@
 					"interval": 15,
 					"startTime": "2018-10-15T19:01:27.910258Z",
 					"endTime": "2018-10-15T22:46:27.910258Z",
-					"maxConcurrency": 10,
-					"retryPolicy": {}
+					"maxConcurrency": 10
 				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/ahwffpubPipelineSingleWait')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffIntegrationRuntimeCloud')]",
-			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "Managed",
-				"typeProperties": {
-					"computeProperties": {
-						"location": "usgovarizona"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ahwffpubIntegrationRuntimeCloud')]",
-			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "Managed",
-				"typeProperties": {
-					"computeProperties": {
-						"location": "usgovarizona"
-					}
-				}
-			},
-			"dependsOn": []
 		}
 	]
 }
