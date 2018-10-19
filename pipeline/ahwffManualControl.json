@@ -27,7 +27,7 @@
 				],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(length(variables('ArrayVar')), 0)",
+						"value": "@equals(length(variables('StringVar')), 0)",
 						"type": "Expression"
 					},
 					"activities": [
@@ -35,15 +35,64 @@
 							"name": "Set Variable1 Inner",
 							"type": "SetVariable",
 							"typeProperties": {
-								"variableName": "StringVar",
+								"variableName": "StringVar2",
 								"value": {
 									"value": "@substring(variables('StringVar'),0,sub(length(variables('StringVar')), 1))",
+									"type": "Expression"
+								}
+							}
+						},
+						{
+							"name": "Set Variable 2 Inner",
+							"type": "SetVariable",
+							"dependsOn": [
+								{
+									"activity": "Set Variable1 Inner",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"typeProperties": {
+								"variableName": "StringVar",
+								"value": {
+									"value": "@variables('StringVar2')",
 									"type": "Expression"
 								}
 							}
 						}
 					],
 					"timeout": "0.00:02:00"
+				}
+			},
+			{
+				"name": "Filter1",
+				"type": "Filter",
+				"typeProperties": {
+					"items": {
+						"value": "@json(replace(pipeline().parameters.NumArrayString, '_', ''))",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@greater(item(), 1)",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"userProperties": [
+					{
+						"name": "FirstUserProperty",
+						"value": "First User Value"
+					}
+				],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ahwffPipelineSingleWait",
+						"type": "PipelineReference"
+					}
 				}
 			}
 		],
@@ -61,10 +110,7 @@
 			},
 			"NumArrayString": {
 				"type": "String",
-				"defaultValue": [
-					1,
-					2
-				]
+				"defaultValue": "_[1,2]"
 			}
 		},
 		"variables": {
@@ -72,6 +118,9 @@
 				"type": "Array"
 			},
 			"StringVar": {
+				"type": "String"
+			},
+			"StringVar2": {
 				"type": "String"
 			}
 		},
