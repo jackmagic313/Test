@@ -688,7 +688,7 @@
 							"headers": {},
 							"authentication": {
 								"type": "MSI",
-								"resource": "https://management.usgovcloudapi.net/subscriptions/65490100-336e-4e01-8026-bb88807690fb/resourcegroups/arthurwtest/providers/Microsoft.DataFactory/factories/ahwfairfax1012"
+								"resource": "https://management.usgovcloudapi.net"
 							}
 						}
 					}
