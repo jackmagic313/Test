@@ -1,0 +1,435 @@
+{
+	"name": "ahwffpubPipelineComplex",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopySqlToBlob1",
+				"type": "Copy",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "SqlSource"
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubSqlDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@if(pipeline().parameters.ShouldSucceed1, 'bashout', 'InvalidContainer')",
+								"type": "Expression"
+							},
+							"fileName": {
+								"value": "@concat('intermediate1_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Succeeded1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@if(pipeline().parameters.ShouldSucceed1, 'bashout', 'InvalidContainer')",
+								"type": "Expression"
+							},
+							"fileName": {
+								"value": "@concat('intermediate1_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('succeeded1_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Failed1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob1",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('failed1_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Completed1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob1",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('completed1_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "CopySqlToBlob2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob1",
+						"dependencyConditions": [
+							"Completed"
+						]
+					},
+					{
+						"activity": "Completed1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "SqlSource"
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubSqlDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@if(pipeline().parameters.ShouldSucceed2, 'bashout', 'InvalidContainer')",
+								"type": "Expression"
+							},
+							"fileName": {
+								"value": "@concat('intermediate2_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Succeeded2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob2",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": {
+								"value": "@if(pipeline().parameters.ShouldSucceed2, 'bashout', 'InvalidContainer')",
+								"type": "Expression"
+							},
+							"fileName": {
+								"value": "@concat('intermediate2_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('succeeded2_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Failed2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob2",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('failed2_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Completed2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "CopySqlToBlob2",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffpubBlobDatasetOut",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashout",
+							"fileName": {
+								"value": "@concat('completed2_', pipeline().parameters.OutputBlobName)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"parameters": {
+			"OutputBlobName": {
+				"type": "String"
+			},
+			"ShouldSucceed1": {
+				"type": "Bool",
+				"defaultValue": false
+			},
+			"ShouldSucceed2": {
+				"type": "Bool",
+				"defaultValue": false
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

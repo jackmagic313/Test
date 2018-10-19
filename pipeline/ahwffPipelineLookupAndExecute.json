@@ -1,0 +1,58 @@
+{
+	"name": "ahwffPipelineLookupAndExecute",
+	"properties": {
+		"activities": [
+			{
+				"name": "Lookup",
+				"type": "Lookup",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"dataset": {
+						"referenceName": "ahwffBlobDatasetJson",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashin",
+							"fileName": "filename.json"
+						}
+					}
+				}
+			},
+			{
+				"name": "ExecutePipelineFromLookup",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Lookup",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ahwffPipelineBlobToBlob",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"OutputBlobName": {
+							"value": "@activity('Lookup').output.firstRow.fileName",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

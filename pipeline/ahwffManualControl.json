@@ -1,0 +1,83 @@
+{
+	"name": "ahwffManualControl",
+	"properties": {
+		"description": "From scratch",
+		"activities": [
+			{
+				"name": "Set Variable1",
+				"type": "SetVariable",
+				"typeProperties": {
+					"variableName": "StringVar",
+					"value": {
+						"value": "@pipeline().parameters.String1",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Until1",
+				"type": "Until",
+				"dependsOn": [
+					{
+						"activity": "Set Variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(length(variables('ArrayVar')), 0)",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Set Variable1 Inner",
+							"type": "SetVariable",
+							"typeProperties": {
+								"variableName": "StringVar",
+								"value": {
+									"value": "@substring(variables('StringVar'),0,sub(length(variables('StringVar')), 1))",
+									"type": "Expression"
+								}
+							}
+						}
+					],
+					"timeout": "0.00:02:00"
+				}
+			}
+		],
+		"parameters": {
+			"String1": {
+				"type": "String"
+			},
+			"NumString": {
+				"type": "String",
+				"defaultValue": "1"
+			},
+			"BoolString": {
+				"type": "String",
+				"defaultValue": "true"
+			},
+			"NumArrayString": {
+				"type": "String",
+				"defaultValue": [
+					1,
+					2
+				]
+			}
+		},
+		"variables": {
+			"ArrayVar": {
+				"type": "Array"
+			},
+			"StringVar": {
+				"type": "String"
+			}
+		},
+		"annotations": [
+			"ManualArthurW"
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,33 @@
+{
+	"name": "ahwffpubBlobDatasetOutWithManagedIR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffpubStorageLinkedServiceWithManagedIR",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderPath": {
+				"type": "string"
+			},
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"treatEmptyAsNull": true
+			},
+			"fileName": {
+				"value": "@concat('ahwffpub_', dataset().fileName)",
+				"type": "Expression"
+			},
+			"folderPath": {
+				"value": "@dataset().folderPath",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,63 @@
+{
+	"name": "ahwffPipelineIf",
+	"properties": {
+		"activities": [
+			{
+				"name": "IfConditionSimple",
+				"type": "IfCondition",
+				"typeProperties": {
+					"expression": {
+						"value": "@greater(pipeline().parameters.Number, 3)",
+						"type": "Expression"
+					},
+					"ifFalseActivities": [
+						{
+							"name": "WaitFromIfFalse",
+							"type": "Wait",
+							"typeProperties": {
+								"waitTimeInSeconds": 5
+							}
+						}
+					],
+					"ifTrueActivities": [
+						{
+							"name": "WebFromIfTrue",
+							"type": "WebActivity",
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"typeProperties": {
+								"url": "https://prod-04.usgovtexas.logic.azure.us:443/workflows/06d3f1e80c424db6b00bc8ad9b2532f1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=AwLvoWlxRIBLm9nentVWWQRVkvWMNd4OhqqLy-gNpZo",
+								"method": "POST",
+								"headers": {
+									"Content-Type": "application/json"
+								},
+								"body": {
+									"message": {
+										"value": "Number in PipelineIf was greater than 3",
+										"type": "Expression"
+									},
+									"runId": {
+										"value": "@pipeline().RunId",
+										"type": "Expression"
+									},
+									"preferSuccess": true
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"Number": {
+				"type": "Int"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

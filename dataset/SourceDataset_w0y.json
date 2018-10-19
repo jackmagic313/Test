@@ -1,0 +1,51 @@
+{
+	"name": "SourceDataset_w0y",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "Prop_0",
+				"type": "DateTime"
+			},
+			{
+				"name": "Prop_1",
+				"type": "String"
+			},
+			{
+				"name": "Prop_2",
+				"type": "String"
+			},
+			{
+				"name": "Prop_3",
+				"type": "String"
+			},
+			{
+				"name": "Prop_4",
+				"type": "DateTime"
+			},
+			{
+				"name": "Prop_5",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"encodingName": null,
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "entitylogs.csv",
+			"folderPath": "bashin"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

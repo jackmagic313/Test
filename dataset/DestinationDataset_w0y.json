@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_w0y",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "copywizstagedout.csv",
+			"folderPath": "bashout"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

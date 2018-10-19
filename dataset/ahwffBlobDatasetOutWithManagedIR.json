@@ -1,0 +1,33 @@
+{
+	"name": "ahwffBlobDatasetOutWithManagedIR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffStorageLinkedServiceWithManagedIR",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderPath": {
+				"type": "string"
+			},
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"treatEmptyAsNull": true
+			},
+			"fileName": {
+				"value": "@concat('ahwff_', dataset().fileName)",
+				"type": "Expression"
+			},
+			"folderPath": {
+				"value": "@dataset().folderPath",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

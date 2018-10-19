@@ -1,0 +1,11 @@
+{
+	"name": "ahwffpubIntegrationRuntimeCloud",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "usgovarizona"
+			}
+		}
+	}
+}

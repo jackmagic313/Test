@@ -1,0 +1,19 @@
+{
+	"name": "ahwffpubBlobDatasetIn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffpubStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"treatEmptyAsNull": true
+			},
+			"fileName": "entitylogs.csv",
+			"folderPath": "bashin"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,32 @@
+{
+	"name": "ahwffpubSqlDatasetIn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffpubSqlLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "EntityId",
+				"type": "Guid"
+			},
+			{
+				"name": "CustomerId",
+				"type": "Guid"
+			},
+			{
+				"name": "Timestamp",
+				"type": "Datetime"
+			},
+			{
+				"name": "DurationSeconds",
+				"type": "Int"
+			}
+		],
+		"typeProperties": {
+			"tableName": "EntityCreation"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

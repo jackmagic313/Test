@@ -1,0 +1,24 @@
+{
+	"name": "ahwffTriggerSingleWait",
+	"properties": {
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffPipelineSingleWait",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2018-10-16T22:04:12.9529329Z",
+				"endTime": "2028-10-16T22:04:12.9529329Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

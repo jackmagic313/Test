@@ -1,0 +1,32 @@
+{
+	"name": "ahwffpubPipelineSproc",
+	"properties": {
+		"activities": [
+			{
+				"name": "SqlSproc",
+				"type": "SqlServerStoredProcedure",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"storedProcedureName": "sp_sqlexec",
+					"storedProcedureParameters": {
+						"p1": {
+							"value": "select * from dbo.EntityCreation",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ahwffpubSqlLinkedService",
+					"type": "LinkedServiceReference"
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

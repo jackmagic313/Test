@@ -1,0 +1,20 @@
+{
+	"name": "ahwffTriggerTumbling",
+	"properties": {
+		"runtimeState": "Stopped",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "ahwffPipelineSingleWait",
+				"type": "PipelineReference"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Minute",
+			"interval": 15,
+			"startTime": "2018-10-16T17:04:12.9539318Z",
+			"endTime": "2018-10-16T20:49:12.9539318Z",
+			"maxConcurrency": 10
+		}
+	}
+}

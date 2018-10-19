@@ -1,0 +1,14 @@
+{
+	"name": "ahwffBlobDatasetInFolderOnly",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"folderPath": "bashin"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

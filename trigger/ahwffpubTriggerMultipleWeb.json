@@ -1,0 +1,63 @@
+{
+	"name": "ahwffpubTriggerMultipleWeb",
+	"properties": {
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffpubPipelineWeb",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Greeting": "@{concat('Hello 1 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffpubPipelineWeb",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Greeting": "@{concat('Hello 2 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffpubPipelineWeb",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Greeting": "@{concat('Hello 3 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffpubPipelineWeb",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Greeting": "@{concat('Hello 4 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "ahwffpubPipelineWeb",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"Greeting": "@{concat('Hello 5 from TriggerMultipleWeb ahwffpub at time ', formatDateTime(trigger().startTime, 'yyyy-MM-dd-HH-mm'))}"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2018-10-16T00:01:27.9112564Z",
+				"endTime": "2028-10-16T00:01:27.9112564Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

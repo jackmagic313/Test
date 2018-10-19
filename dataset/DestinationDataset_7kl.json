@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_7kl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ahwffStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"fileName": "copywizout.csv",
+			"folderPath": "bashout"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

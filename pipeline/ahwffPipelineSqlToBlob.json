@@ -1,0 +1,53 @@
+{
+	"name": "ahwffPipelineSqlToBlob",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopySqlToBlob",
+				"type": "Copy",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "SqlSource"
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "ahwffSqlDatasetIn",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ahwffBlobDatasetOutWithManagedIR",
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName": {
+								"value": "@pipeline().parameters.OutputBlobName",
+								"type": "Expression"
+							},
+							"folderPath": "bashout"
+						}
+					}
+				]
+			}
+		],
+		"parameters": {
+			"OutputBlobName": {
+				"type": "String"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

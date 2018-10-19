@@ -1,0 +1,137 @@
+{
+	"name": "ahwffpubPipelineForeachCopy",
+	"properties": {
+		"activities": [
+			{
+				"name": "LookupManyInputsList",
+				"type": "Lookup",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"dataset": {
+						"referenceName": "ahwffpubBlobDatasetJson",
+						"type": "DatasetReference",
+						"parameters": {
+							"folderPath": "bashin",
+							"fileName": "manyinputslist.json"
+						}
+					}
+				}
+			},
+			{
+				"name": "ForEachOfManyInputs",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LookupManyInputsList",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('LookupManyInputsList').output.firstRow.fileNames",
+						"type": "Expression"
+					},
+					"isSequential": false,
+					"batchCount": 10,
+					"activities": [
+						{
+							"name": "CopyOneOfManyInputs",
+							"type": "Copy",
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"typeProperties": {
+								"source": {
+									"type": "BlobSource",
+									"recursive": true
+								},
+								"sink": {
+									"type": "BlobSink"
+								},
+								"enableStaging": false,
+								"dataIntegrationUnits": 0
+							},
+							"inputs": [
+								{
+									"referenceName": "ahwffpubBlobDatasetInParameterized",
+									"type": "DatasetReference",
+									"parameters": {
+										"folderPath": "bashin/manyinputs",
+										"fileName": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "ahwffpubBlobDatasetOut",
+									"type": "DatasetReference",
+									"parameters": {
+										"folderPath": "bashout/manyoutputs",
+										"fileName": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "WebFromForEach",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "ForEachOfManyInputs",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"typeProperties": {
+					"url": "https://prod-12.eastus.logic.azure.com:443/workflows/c96e127b209948228f6cddcab121aaab/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27wBIQwhVaA2eMhNEnuHSK604VEJpsUIslT4nkpwNiM",
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json"
+					},
+					"body": {
+						"message": "Hello from WebFromForEach",
+						"runId": {
+							"value": "@pipeline().RunId",
+							"type": "Expression"
+						},
+						"preferSuccess": true
+					}
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

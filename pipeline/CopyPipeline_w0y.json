@@ -1,0 +1,60 @@
+{
+	"name": "CopyPipeline_w0y",
+	"properties": {
+		"description": "Try staging",
+		"activities": [
+			{
+				"name": "Copy_w0y",
+				"type": "Copy",
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "bashin/entitylogs.csv"
+					},
+					{
+						"name": "Destination",
+						"value": "bashout/copywizstagedout.csv"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "ahwffStorageLinkedService",
+							"type": "LinkedServiceReference"
+						},
+						"path": "bashout"
+					},
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_w0y",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_w0y",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
