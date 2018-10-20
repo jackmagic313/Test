@@ -1,6 +1,7 @@
 {
 	"name": "ahwffManualMSI",
 	"properties": {
+		"description": "Test description",
 		"activities": [
 			{
 				"name": "Web1",
